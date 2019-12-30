@@ -147,7 +147,7 @@ def plotSimpleHistogram(title, crimeDict, wide = True, colormap = 'viridis'):
     plt.show()
     
 #Plot multi-Dimensional histogram from a list of dictionaries
-def test(crimeDictList, title = "TEST", wide = True, colormap = 'viridis'):
+def plotMultiDimensionalHistogram(crimeDictList, title = "TEST", wide = True, colormap = 'viridis'):
     framable = {}
     width = 10 if wide else 5
     
@@ -179,7 +179,7 @@ plotPieChart("CRIME BY REGION", "Region", regional_crime)
 plotBarChart("VIOLENCE BY STATE", "State", state_violence)
 plotSimpleHistogram("MURDER FREQUENCY IN THE STATES", state_murders)
 plotBarChart("LARCENY IN THE MIDWEST", "State", midwest_larceny)
-#test([midwest_violence, midwest_larceny])
+#plotMultiDimensionalHistogram([midwest_violence, midwest_larceny], "MIDEST (Violence + Larceny)")
 
 
 
